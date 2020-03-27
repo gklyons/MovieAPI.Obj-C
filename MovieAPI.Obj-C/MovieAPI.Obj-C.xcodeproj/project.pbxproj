@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		D45BC2A8242E53670058F68A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45BC2A7242E53670058F68A /* AppDelegate.swift */; };
 		D45BC2AA242E53670058F68A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45BC2A9242E53670058F68A /* SceneDelegate.swift */; };
-		D45BC2AC242E53670058F68A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45BC2AB242E53670058F68A /* ViewController.swift */; };
 		D45BC2AF242E53670058F68A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45BC2AD242E53670058F68A /* Main.storyboard */; };
 		D45BC2B1242E53680058F68A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45BC2B0242E53680058F68A /* Assets.xcassets */; };
 		D45BC2B4242E53680058F68A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45BC2B2242E53680058F68A /* LaunchScreen.storyboard */; };
+		D45BC2C4242E57B40058F68A /* GKLMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = D45BC2C3242E57B40058F68A /* GKLMovie.m */; };
+		D45BC2C7242E6DEE0058F68A /* GKLMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = D45BC2C6242E6DEE0058F68A /* GKLMovieController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D45BC2A4242E53670058F68A /* MovieAPI.Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MovieAPI.Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45BC2A7242E53670058F68A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D45BC2A9242E53670058F68A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D45BC2AB242E53670058F68A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D45BC2AE242E53670058F68A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D45BC2B0242E53680058F68A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D45BC2B3242E53680058F68A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D45BC2B5242E53680058F68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45BC2C1242E57B30058F68A /* MovieAPI.Obj-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieAPI.Obj-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		D45BC2C2242E57B40058F68A /* GKLMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKLMovie.h; sourceTree = "<group>"; };
+		D45BC2C3242E57B40058F68A /* GKLMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKLMovie.m; sourceTree = "<group>"; };
+		D45BC2C5242E6DEE0058F68A /* GKLMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKLMovieController.h; sourceTree = "<group>"; };
+		D45BC2C6242E6DEE0058F68A /* GKLMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKLMovieController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +61,67 @@
 		D45BC2A6242E53670058F68A /* MovieAPI.Obj-C */ = {
 			isa = PBXGroup;
 			children = (
+				D45BC2BE242E57470058F68A /* UI */,
+				D45BC2BC242E57330058F68A /* Models */,
+				D45BC2BD242E573E0058F68A /* Controllers */,
+				D45BC2BB242E53D50058F68A /* Resources */,
+			);
+			path = "MovieAPI.Obj-C";
+			sourceTree = "<group>";
+		};
+		D45BC2BB242E53D50058F68A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D45BC2A7242E53670058F68A /* AppDelegate.swift */,
 				D45BC2A9242E53670058F68A /* SceneDelegate.swift */,
-				D45BC2AB242E53670058F68A /* ViewController.swift */,
-				D45BC2AD242E53670058F68A /* Main.storyboard */,
 				D45BC2B0242E53680058F68A /* Assets.xcassets */,
 				D45BC2B2242E53680058F68A /* LaunchScreen.storyboard */,
 				D45BC2B5242E53680058F68A /* Info.plist */,
 			);
-			path = "MovieAPI.Obj-C";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D45BC2BC242E57330058F68A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D45BC2C2242E57B40058F68A /* GKLMovie.h */,
+				D45BC2C3242E57B40058F68A /* GKLMovie.m */,
+				D45BC2C1242E57B30058F68A /* MovieAPI.Obj-C-Bridging-Header.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D45BC2BD242E573E0058F68A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D45BC2C0242E575C0058F68A /* View Controllers */,
+				D45BC2BF242E57500058F68A /* Model Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D45BC2BE242E57470058F68A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D45BC2AD242E53670058F68A /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D45BC2BF242E57500058F68A /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D45BC2C5242E6DEE0058F68A /* GKLMovieController.h */,
+				D45BC2C6242E6DEE0058F68A /* GKLMovieController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		D45BC2C0242E575C0058F68A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,12 +150,14 @@
 		D45BC29C242E53670058F68A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GKL;
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Turtle;
 				TargetAttributes = {
 					D45BC2A3242E53670058F68A = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -138,7 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45BC2AC242E53670058F68A /* ViewController.swift in Sources */,
+				D45BC2C4242E57B40058F68A /* GKLMovie.m in Sources */,
+				D45BC2C7242E6DEE0058F68A /* GKLMovieController.m in Sources */,
 				D45BC2A8242E53670058F68A /* AppDelegate.swift in Sources */,
 				D45BC2AA242E53670058F68A /* SceneDelegate.swift in Sources */,
 			);
@@ -284,15 +344,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3N9XPK38Q;
-				INFOPLIST_FILE = "MovieAPI.Obj-C/Info.plist";
+				INFOPLIST_FILE = "MovieAPI.Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "SIB.Production.MovieAPI-Obj-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieAPI.Obj-C/Models/MovieAPI.Obj-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +365,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3N9XPK38Q;
-				INFOPLIST_FILE = "MovieAPI.Obj-C/Info.plist";
+				INFOPLIST_FILE = "MovieAPI.Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "SIB.Production.MovieAPI-Obj-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieAPI.Obj-C/Models/MovieAPI.Obj-C-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
